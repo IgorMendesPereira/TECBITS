@@ -46,7 +46,7 @@
 
 .AllProducts-container ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 24px;
     list-style: none;
 }
@@ -74,9 +74,13 @@
     margin-bottom: 16px;
     color: #41414d;
 }
-
+.AllProducts-container ul li img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .AllProducts-container ul li p + strong {
-    margin-top: 32px;
+    margin-top: 15px;
 }
 
 .AllProducts-container ul li p {

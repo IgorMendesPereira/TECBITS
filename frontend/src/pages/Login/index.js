@@ -80,7 +80,7 @@ export default function Login(){
                 />
                 <button className = "button" type = "submit">Entrar</button>
 
-                <Link className = "back-link" to = "/register">
+                <Link className = "back-link" to = "/newregister">
                     <FiLogIn size = {16} color = "#F26E22" />
                     Não tenho cadastro
                 </Link>

@@ -52,11 +52,13 @@ align-items: center;
 .product-container .content form {
     width: 100%;
     max-width: 450px;
+    
 
 }
 
 .product-container .content form input {
     margin-top: 8px;
+    background-color: #ffff;
 }
 
 .product-container .content form .input-group{

@@ -13,6 +13,7 @@ let product_name = ['']
 
 export default function AllProducts(){
     const [products, setProducts] = useState([])
+    console.log(products)
 
     const history = useHistory()
 
@@ -63,12 +64,14 @@ export default function AllProducts(){
             <ul>
               {products.map(product => (  
               <li key={product.product_id}>
+        
                     <strong>
                         Produto
                     </strong>
                     <p>
                         {product.product_name}
                     </p>
+                    <img  src = {`http://localhost:3308/files/${product.product_id}.jpg`} alt = "Imagem do produto" />
                     <strong>
                         Descrição
                     </strong>
