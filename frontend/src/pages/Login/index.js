@@ -30,7 +30,6 @@ export default function Login(){
         }else {
             try {
               const res = await api.post(`users/${data.name}`, { password: data.password })
-              console.log('AAAAA',res, name, password)
               const response = logando(res.data.token);
               const msg = res.data.mensagem
               const token = res.data.token

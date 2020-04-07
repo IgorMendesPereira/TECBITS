@@ -1,43 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tec Bits</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Tec Bits</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <!-- Favicons
+    ================================================== -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+  <!-- Stylesheet
+    ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div id="root"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <div  class="intro">
+      <div  class="overlay">
+        <div class="container" >
+          <div class="row" >
+            <div class="intro-text" >
+              <img src="img/support/logo_tecbits.png"  class="img-responsive about-img" alt=""/>
+              <h1>Vendas e assistência técnica</h1>
+              <p>•Computadores •Celulares •Notebooks •Monitores</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About Section -->
+  <div id="about" >
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 text-center">
+          <br><br><br>
+          <div class="about-img"><img src="img/about.jpg" class="img-responsive" alt=""></div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="about-text">
+            <h2>Assitência Tecnica</h2>
+            <hr>
+            <p>Oferecemos o suporte em diversas áreas. Manutenção de computadores, notebooks e celulares como troca de tela, 
+              entrada USB, formatação e instalação de programas desejados. Atendemos na sua casa ou na nossa loja!!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Restaurant Menu Section -->
+  <div id="restaurant-menu"  >
+    <div class="section-title text-center center" >
+      <div class="overlay">
+        <h2 >Produtos</h2>
+        <hr>
+        <p><a href="/produtos"><strong>Clique aqui</strong> e confira os melhores preços!!</a></p>
+        <a href="/produtos" style="color:#F26E22 ;">Entregamos todos os produtos em sua casa para sua comididade e segurança</a>
+      </div>
+    </div>
+    <div class="container"  href="/produtos">
+      <div class="row " >
+        <div class="col-sm-12 col-md-6 col-lg-4" >  
+          <div class="menu-section">
+            <img  style="max-width: 200px ; margin-left: 75px; margin-top: -10px;" src="img/computador.png"  class="img-products" alt="" />
+            <h3 class="menu-section-title" style="margin-top: 5px;" >Computadores</h3>
+            <hr>
+            <div class="menu-item text-center" style="margin-top: 5px;">
+              <div class="menu-item-description">Computadores de marcas e preços variados</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4" >  
+          <div class="menu-section">
+            <img style="max-width: 400px; margin-top: 88px; margin-left: 30px;"src="img/xbox.png"  class="img-products " alt="" />
+            <h3 class="menu-section-title" style="margin-top: 5px;" >Video Games</h3>
+            <hr>
+            <div class="menu-item text-center" style="margin-top: 5px;">
+              <div class="menu-item-description">Video Games marcas e preços variados</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4" >  
+          <div class="menu-section">
+            <img style="max-width: 100px; margin-left: 130px; margin-top: -30px;" src="img/celular.png"  class="img-products " alt="" />
+            <h3 class="menu-section-title" style="margin-top: 5px;" >Celulares</h3>
+            <hr>
+            <div class="menu-item text-center" style="margin-top: 5px;">
+              <div class="menu-item-description">Celulares de marcas e preços variados</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4" style="margin-left: -300px;">  
+          <div class="menu-section">
+            <img style="max-width: 200px; margin-left: 70px;" src="img/notebook.png"  class="img-products" alt="" />
+            <h3 class="menu-section-title" style="margin-top: 5px;" >Notebooks</h3>
+            <hr>
+            <div class="menu-item text-center" style="margin-top: 5px;">
+              <div class="menu-item-description">Notebooks de marcas e preços variados</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4" style="margin-left: 200px;margin-top:-45px ;">  
+          <div class="menu-section">
+            <img src="img/aces.png"  class="img-products " alt="" />
+            <h3 class="menu-section-title" style="margin-top: 5px;" >Acessórios</h3>
+            <hr>
+            <div class="menu-item text-center" style="margin-top: 5px;">
+              <div class="menu-item-description">Carregadores de celular e notebook, fones de ouvido e muito mais!!</div>
+            </div>
+          </div>
+        </div>
+
+        
+      
+      </div>
+    </div>
+  </div>
+  
+
+  <div id="sustentability">
+    <div class="section-title text-center center">
+      <div class="overlay">
+        <h2>Fale Conosco</h2>
+        <hr>
+        <p>Entre em contato com os nossos atendentes!<br></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="text-center">
+    <div class="container">
+      <div class=" text-center center margin-hr">
+        
+      </div>
+
+      <div class="col-md-5 col-md-offset-1">
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var uluru = { lat: -21.556359, lng: -45.438538 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 18,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJwxeIeomhwPNxsINL-scrSTk9HyQHqD8&callback=initMap">
+        </script>
+        <div style="margin-left: -150px">
+          <div  class="container text-center">
+            <div class="col-md-6">
+              <h3>Endereço</h3>
+              <div class="contact-item">
+                <p>Rua Presidente Antônio Carlos, 667 - Centro</p>
+                <p>Tec Bits, Varginha - Minas Gerais </p>
+               
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3>Informações de Contato</h3>
+              <div class="contact-item">
+                <p>+55 (35) 98839-0730</p>
+                <p>fabio@tecbitsvga.com.br</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+  
+    <div class="container-fluid text-center copyrights">
+      <div class="col-md-8 col-md-offset-2">
+        <p>&copy; 2020 Copyright: TecBits - Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
